@@ -1,0 +1,10 @@
+<h1>Contestants</h1>
+<p><% @bachelorette.contestants.each do |contestant| %>
+  <p>Name: <%= link_to "#{contestant.name}", "/contestants/#{contestant.id}", method: :get %></p>
+  <p>Age: <%= contestant.age %></p>
+  <p>Hometown: <%= contestant.hometown %></p>
+<% end %>
+</p>
+<section id="unique_hometowns-<%= @bachelorette.id%>">
+<p>Contestant Hometowns: <%= @bachelorette.unique_hometowns %></p>
+</section>

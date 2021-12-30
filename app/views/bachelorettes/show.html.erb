@@ -1,0 +1,6 @@
+<h1>Bachelorette</h1>
+<p>Name: <%= @bachelorette.name %></p>
+<p>Season Number: <%= @bachelorette.season_number %></p>
+<p>Description: <%= @bachelorette.description %></p>
+<p><%= link_to "Bachelorette's Contestants", "/bachelorettes/#{@bachelorette.id}/contestants", method: :get %></p>
+<p>Average Age of Contestants: <%= @bachelorette.average_age %></p>
